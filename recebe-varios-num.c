@@ -63,7 +63,7 @@ int main(){
             }
         }
 
-        //Verifica numeros impares e pares
+        //Verifica numeros pares e impares
           if (num % 2 == 0) {
             soma_pares += num;
             contador_pares++;
@@ -76,16 +76,16 @@ int main(){
       if(contador_pares > 0){
       media_pares = (float)soma_pares / contador_pares;
         //G- porcentagem impares
-    porcentagem_impares = (contador > 0) ? (float)((float)contador_impares / contador) * 100 : 0;
+    porcentagem_impares = (contador > 0) ? ((float)contador_impares / contador) * 100 : 0;
   } 
       else {
       media = media_pares = porcentagem_impares = 0;
     }
       //resutados
-      printf("A soma dos numeros digitados e: %d\n", soma);
-      printf("Quantidade de números digitados: %d\n", contador);
-    //C- media dos numeros digitados
+    printf("A soma dos numeros digitados e: %d\n", soma);
+    printf("Quantidade de números digitados: %d\n", contador);
     
+    //C- media dos numeros digitados
        media = (float)soma / contador;
     printf("A media dos numeros digitados e: %.2f\n", media);
     // maior e menor numero
